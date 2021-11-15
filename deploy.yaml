@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: apache-deploy
+  labels:
+    name: apache-deploy
+    app: pwn-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: apache-pod
+      app: own-app
+  templates:
+    metadata:
+      name: apache-pod
+      labels:
+        name: apache-pod
+        app: own-app
+    spec: 
+      containers:
+        - name: apache-pod
+          image: name***
+  
