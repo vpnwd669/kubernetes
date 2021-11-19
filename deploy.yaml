@@ -20,5 +20,5 @@ spec:
     spec: 
       containers:
         - name: apache-pod
-          image: apache
+          image: vpwnd669/own-apache
   
